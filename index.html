@@ -118,7 +118,8 @@
       <label>Email<input name="email" type="email" required autocomplete="email"></label>
       <label>Session you are registering for<input name="session" required placeholder="As named in the Instagram ad"></label>
       <label>Amount paid (₹)<input name="amount_paid" type="number" min="1" inputmode="numeric" required></label>
-      <label>UPI transaction / reference ID<input name="txn_id" required minlength="8" placeholder="12-digit UTR from your payment app"></label>
+      <label>UPI transaction / UTR number<input name="txn_id" required pattern="[0-9]{12}" inputmode="numeric" maxlength="12" title="Enter the 12-digit UTR number" placeholder="12-digit UTR from your payment app"></label>
+      <label>Payment screenshot<input name="screenshot" type="file" accept="image/*" required></label>
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
       <button class="btn" type="submit">Submit Registration</button>
       <p id="msg" class="small" role="alert"></p>
