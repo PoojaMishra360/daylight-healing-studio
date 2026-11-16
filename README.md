@@ -3,7 +3,7 @@
 Static site (no build step). Deploy on Vercel.
 
 ## Setup
-1. Edit `config.js`: your UPI ID, WhatsApp community link, and a free access key from https://web3forms.com (registrations are emailed to you).
+1. Edit the settings at the top of `script.js`: your UPI ID, WhatsApp community link, and a free access key from https://web3forms.com (registrations are emailed to you).
 2. Test locally: open `index.html`, or run `npx serve`.
 3. Deploy: push to GitHub, import the repo in Vercel (framework "Other", no build command), then add your domain.
 

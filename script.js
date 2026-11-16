@@ -1,5 +1,14 @@
+// Edit these values before deploying.
+var s = {
+  upiId: "aonemarketing220-1@okicici",
+  payeeName: "Delight Healing Studio",
+  whatsapp: "919860402012",         // country code + number, no +
+  communityLink: "https://chat.whatsapp.com/CR9CfHLvvHA75CtNM9x7DD",
+  // Free key from https://web3forms.com (emails each registration to you)
+  web3formsKey: "cdc8cb8a-64e5-4497-8273-3e028f239f49"
+};
+
 (function () {
-  var s = window.SITE;
   var upi = "upi://pay?pa=" + encodeURIComponent(s.upiId) +
     "&pn=" + encodeURIComponent(s.payeeName) + "&cu=INR";
 
